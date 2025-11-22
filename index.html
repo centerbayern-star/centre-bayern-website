@@ -33,7 +33,7 @@
             top: 0;
             left: 0;
             height: 4px;
-            background: linear-gradient(90deg, #0066ff, #00d4aa);
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             z-index: 9999;
             transition: width 0.1s;
         }
@@ -702,17 +702,17 @@
             color: white;
         }
 
-        .why-icon.orange { background: linear-gradient(135deg, #ff6b35, #ff8c42); }
-        .why-icon.blue { background: linear-gradient(135deg, #0066ff, #0052cc); }
+        .why-icon.orange { background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark)); }
+        .why-icon.blue { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); }
         .why-icon.green { background: linear-gradient(135deg, #00d4aa, #00b894); }
-        .why-icon.purple { background: linear-gradient(135deg, #a855f7, #9333ea); }
-        .why-icon.red { background: linear-gradient(135deg, #ef4444, #dc2626); }
-        .why-icon.yellow { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
+        .why-icon.purple { background: linear-gradient(135deg, #6b7280, #4b5563); }
+        .why-icon.red { background: linear-gradient(135deg, var(--primary-light), var(--primary-color)); }
+        .why-icon.yellow { background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark)); }
 
         /* CTA Section */
         .cta {
             padding: 4rem 5%;
-            background: linear-gradient(135deg, #0066ff, #0052cc);
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
             color: white;
             text-align: center;
         }
@@ -730,7 +730,7 @@
 
         .cta-button {
             background: white;
-            color: #0066ff;
+            color: var(--primary-color);
             padding: 1rem 2rem;
             border-radius: 12px;
             border: none;
@@ -794,9 +794,9 @@
             color: white;
         }
 
-        .contact-icon.pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+        .contact-icon.pink { background: linear-gradient(135deg, var(--primary-light), var(--primary-color)); }
         .contact-icon.green { background: linear-gradient(135deg, #00d4aa, #00b894); }
-        .contact-icon.blue { background: linear-gradient(135deg, #0066ff, #0052cc); }
+        .contact-icon.blue { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); }
 
         .contact-card h4 {
             font-size: 1rem;
@@ -827,7 +827,7 @@
         .final-cta-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #0066ff, #00d4aa);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -989,6 +989,7 @@
                 <li><a href="#programmes">Programmes</a></li>
                 <li><a href="#examens">Examens</a></li>
                 <li><a href="#accompagnement">Accompagnement</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu">☰</div>
@@ -1232,7 +1233,9 @@
     <!-- Final CTA -->
     <section class="final-cta">
         <div class="final-cta-box">
-            <div class="final-cta-icon">🇩🇪</div>
+            <div class="final-cta-icon">
+                <img src="https://scontent.faga1-1.fna.fbcdn.net/v/t39.30808-6/516633462_1189613846521783_2270950579811437816_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFtZH5_i28ukGuLbcy6YIxNSHdBw2kDYkhId0HDaQNiSCvUqHmgb_JZlsKvMtoV2zidogUpixPKRRydMw9OjFAr&_nc_ohc=SROaQTh-PZUQ7kNvwE_An8T&_nc_oc=AdkmtmI-8DyhaqGnByq0kxgRFQdRYx6y5ZShuagQPzl5jem_kzCTnN90L8pKNxevKfg&_nc_zt=23&_nc_ht=scontent.faga1-1.fna&_nc_gid=MBJg6Te_Ed99alXHvfEPNg&oh=00_Afj9WQRKKnbluE_18N8UAf7ZyjgQE1O7tZDeL3xmOAsDsQ&oe=6927A72E" alt="Centre Bayern" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            </div>
             <h3>Centre Bayern de la Langue Allemande</h3>
             <p>Votre partenaire pour l'apprentissage de l'allemand et votre installation en Allemagne</p>
             <div class="final-cta-buttons">
@@ -1265,7 +1268,7 @@
             </div>
             <div class="footer-section">
                 <h4>Suivez-nous</h4>
-                <a href="#">@CentreBayernAgadir</a>
+                <a href="https://facebook.com/CentreBayernAgadir" target="_blank">Facebook - @CentreBayernAgadir</a>
             </div>
         </div>
         <div class="footer-bottom">
