@@ -18,6 +18,16 @@
             overflow-x: hidden;
         }
 
+        :root {
+            --primary-color: #dc2626;
+            --primary-dark: #b91c1c;
+            --primary-light: #ef4444;
+            --secondary-color: #fbbf24;
+            --secondary-dark: #f59e0b;
+            --accent-black: #1a1a1a;
+            --accent-gray: #6b7280;
+        }
+
         .scroll-indicator {
             position: fixed;
             top: 0;
@@ -111,11 +121,11 @@
         }
 
         nav a:hover {
-            color: #0066ff;
+            color: var(--primary-color);
         }
 
         .btn-primary {
-            background: #0066ff;
+            background: var(--primary-color);
             color: white;
             padding: 0.6rem 1.5rem;
             border-radius: 8px;
@@ -127,17 +137,17 @@
         }
 
         .btn-primary:hover {
-            background: #0052cc;
+            background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,102,255,0.3);
+            box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
         }
 
         .btn-secondary {
             background: white;
-            color: #0066ff;
+            color: var(--primary-color);
             padding: 0.6rem 1.5rem;
             border-radius: 8px;
-            border: 2px solid #0066ff;
+            border: 2px solid var(--primary-color);
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
@@ -145,7 +155,7 @@
         }
 
         .btn-secondary:hover {
-            background: #0066ff;
+            background: var(--primary-color);
             color: white;
             transform: translateY(-2px);
         }
@@ -172,7 +182,7 @@
             right: -10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(0, 102, 255, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(220, 38, 38, 0.08) 0%, transparent 70%);
             border-radius: 50%;
             animation: float 6s ease-in-out infinite;
         }
@@ -184,7 +194,7 @@
             left: -5%;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(255, 107, 53, 0.06) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
             border-radius: 50%;
             animation: float 8s ease-in-out infinite reverse;
         }
@@ -201,11 +211,11 @@
             padding: 0.6rem 1.2rem;
             border-radius: 30px;
             font-size: 0.9rem;
-            color: #0066ff;
+            color: var(--primary-color);
             margin-bottom: 1.5rem;
             animation: fadeInLeft 0.8s ease;
-            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.1);
-            border: 1px solid rgba(0, 102, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.15);
+            border: 1px solid rgba(220, 38, 38, 0.2);
             font-weight: 500;
         }
 
@@ -268,11 +278,11 @@
             padding: 0.9rem 2rem;
             font-size: 1.05rem;
             font-weight: 600;
-            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.3);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
         }
 
         .hero-buttons .btn-primary:hover {
-            box-shadow: 0 12px 35px rgba(0, 102, 255, 0.4);
+            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.4);
         }
 
         .hero-buttons .btn-secondary {
@@ -304,7 +314,7 @@
             left: -20px;
             right: 20px;
             bottom: 20px;
-            background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(255, 107, 53, 0.1));
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.15), rgba(251, 191, 36, 0.15));
             border-radius: 30px;
             z-index: -1;
             animation: pulse 3s ease-in-out infinite;
@@ -353,11 +363,11 @@
 
         .section-badge {
             display: inline-block;
-            background: #e8f0fe;
+            background: #fee2e2;
             padding: 0.4rem 1rem;
             border-radius: 20px;
             font-size: 0.85rem;
-            color: #0066ff;
+            color: var(--primary-color);
             margin-bottom: 0.5rem;
         }
 
@@ -414,8 +424,8 @@
         }
 
         .level-icon.green { background: linear-gradient(135deg, #00d4aa, #00b894); }
-        .level-icon.blue { background: linear-gradient(135deg, #0066ff, #0052cc); }
-        .level-icon.purple { background: linear-gradient(135deg, #a855f7, #9333ea); }
+        .level-icon.blue { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); }
+        .level-icon.purple { background: linear-gradient(135deg, #6b7280, #4b5563); }
 
         .level-card h3 {
             font-size: 1.3rem;
@@ -474,7 +484,7 @@
         }
 
         .exam-features {
-            background: #0066ff;
+            background: var(--primary-color);
             color: white;
             padding: 2rem;
             border-radius: 16px;
@@ -513,7 +523,7 @@
         .certificate-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #0066ff, #00d4aa);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -592,11 +602,11 @@
             color: white;
         }
 
-        .accomp-icon.orange { background: linear-gradient(135deg, #ff6b35, #ff8c42); }
-        .accomp-icon.blue { background: linear-gradient(135deg, #0066ff, #0052cc); }
-        .accomp-icon.purple { background: linear-gradient(135deg, #a855f7, #9333ea); }
+        .accomp-icon.orange { background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark)); }
+        .accomp-icon.blue { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); }
+        .accomp-icon.purple { background: linear-gradient(135deg, #6b7280, #4b5563); }
         .accomp-icon.green { background: linear-gradient(135deg, #00d4aa, #00b894); }
-        .accomp-icon.red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        .accomp-icon.red { background: linear-gradient(135deg, var(--primary-light), var(--primary-color)); }
 
         .accomp-card h3 {
             font-size: 1.1rem;
@@ -999,7 +1009,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg" alt="Learn German">
+                <img src="https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg alt="Learn German">
             </div>
         </div>
     </section>
